@@ -7,3 +7,4 @@ Learn Kotlin
 Learn React Js
 Learn Http Requests And Apis
 Learn Python advance oop
+Master Python
