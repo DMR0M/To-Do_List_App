@@ -1,8 +1,10 @@
 import os
+import pathlib
 # import datetime
 import time
 
-FILE_PATH = '../todos.txt'
+PATH = pathlib.Path()
+FILE_PATH = os.path.join(os.getcwd(), 'todos.txt')
 custom_dformat = time.strftime('%m-%d-%Y')
 
 

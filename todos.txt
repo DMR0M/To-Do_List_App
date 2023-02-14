@@ -2,10 +2,9 @@ Learn Javascript
 Learn Oracle Sql Databases
 Learn Django
 Learn Flask
-Learn Fastapi
+Learn FastAPI
 Learn Kotlin
 Learn React Js
-Learn Http Requests And Apis
+Learn Http Requests And APIs
 Learn Python advance oop
-Learn Numpy, Pandas, and Plotly
-Go to work
+Learn Intermediate Automation with Python
