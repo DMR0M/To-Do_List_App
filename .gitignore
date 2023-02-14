@@ -3,3 +3,4 @@
 journal_proto.py
 password_checker.py
 /backup
+/files_compressor
