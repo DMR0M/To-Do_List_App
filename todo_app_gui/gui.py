@@ -5,26 +5,41 @@ import PySimpleGUI as sg
 label = sg.Text('Type in a to-do')
 input_box = sg.InputText(tooltip='Enter to-do', key='todo')
 add_btn = sg.Button('Add')
+list_box = sg.Listbox(values=functions.get_todos(), key='todo-items',
+                      enable_events=True, size=(40, 12))     # Get the list from the functions module
+edit_btn = sg.Button('Edit')
 
 
-# GUI Title
 # Main Window
 window = sg.Window('My To-Do App',
-                   layout=[[label], [input_box, add_btn]],
-                   font=('Helvetica', 15))
+                   layout=[[label], [input_box, add_btn], [list_box, edit_btn]],
+                   font=('Verdana', 15))
+
 
 while True:
     event, values = window.read()
-    print(event)
-    print(values)
+    print(1, event)
+    print(2, values)
+    print(3, values['todo-items'])
     match event:
-        case "Add":
+        case 'Add':
             todos = functions.get_todos()
             new_todo = f"{values['todo']}\n"
             todos.append(new_todo)
             functions.write_todos(todos)
-        case "Show":
-            pass
+            window['todo-items'].update(values=todos)
+        case 'Edit':
+            todo_edit = values['todo-items'][0]
+            new_todo = f"{values['todo']}\n"
+            # Replace existing to-do item selected
+            todos = functions.get_todos()
+            todo_index = todos.index(todo_edit)
+            todos[todo_index] = new_todo
+            functions.write_todos(todos)
+            window['todo-items'].update(values=todos)
+        case 'todo-items':
+            window['todo'].update(value=values['todo-items'][0])
+
         case sg.WIN_CLOSED:
             break
 

@@ -7,4 +7,5 @@ Learn Kotlin
 Learn React Js
 Learn Http Requests And Apis
 Learn Python advance oop
-Master Python
+Learn Numpy, Pandas, and Plotly
+Go to work
