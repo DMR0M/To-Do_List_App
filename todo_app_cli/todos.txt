@@ -1,0 +1,9 @@
+Learn Javascript
+Learn Oracle Sql Databases
+Learn Django
+Learn Flask
+Learn Fastapi
+Learn Kotlin
+Learn React Js
+Learn Http Requests And Apis
+Learn Python advance oop

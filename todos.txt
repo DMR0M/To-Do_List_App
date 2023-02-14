@@ -1,0 +1,10 @@
+Learn Kotlin
+Learn Django
+Learn Flask
+learn React js
+learn postgresql
+Learn Functional Programming In Python
+Learn Advance Oop Concepts And Application In Python
+Learn Oracle SQL databases
+Learn Python Iterators And Generators
+Learn Design Patterns
