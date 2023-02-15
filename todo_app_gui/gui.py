@@ -6,7 +6,7 @@ sg.theme('DarkGrey2')
 
 clock = sg.Text('', key='clock', text_color='White')
 label = sg.Text('Type in a to-do')
-input_box = sg.InputText(tooltip='Enter to-do', key='todo')
+input_box = sg.InputText(tooltip='Enter to-do', key='todo', size=30)
 add_btn = sg.Button('Add', size=10)
 list_box = sg.Listbox(values=functions.get_todos(), key='todo-items',
                       enable_events=True, size=(40, 12))     # Get the list from the functions module
@@ -20,8 +20,8 @@ window = sg.Window('To-Do List App',
                    layout=[[clock],
                            [label],
                            [input_box, add_btn],
-                           [list_box, edit_btn, complete_btn],
-                           [exit_btn]],
+                           [list_box],
+                           [edit_btn, complete_btn, sg.Push(), exit_btn]],
                    font=('Verdana', 15))
 
 
