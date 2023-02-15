@@ -1,5 +1,5 @@
 import streamlit as st
-from todo_app_cli import functions
+import functions
 
 
 def add_todo():

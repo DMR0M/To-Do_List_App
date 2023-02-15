@@ -7,5 +7,4 @@ Learn Intermediate Automation with Python
 Learn Vanilla Javascript
 Learn DOM (HTML/CSS)
 Learn Numpy and Pandas
-Learn Data Science in Python
 Learn Kotlin Fundamentals
